@@ -17,6 +17,8 @@ header {
     border-bottom: 1px solid #E7E9FC;
 }
 
+/* reset + global */
+
 h1,
 h2,
 h3,
@@ -26,18 +28,12 @@ h6 {
     margin: 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
+fieldset {
     padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    margin: 0;
+    border: none;
 }
+
 
 a {
     text-decoration: none;
@@ -58,6 +54,25 @@ li {
     padding: 0;
     list-style: none;
     display: block;
+}
+
+input {
+    font-family: inherit;
+}
+
+/* ====================== */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -474,6 +489,10 @@ li {
     gap: 16px;
 }
 
+.footer__icon {
+    margin-right: 80px;
+}
+
 .footer-list-icon {
     height: 40px;
     width: 40px;
@@ -500,6 +519,13 @@ li {
 .footer-link-icon:focus {
     background-color: #31D0AA;
 }
+
+/* .footer_button {
+    padding: 8px 24px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border-radius: 4px;
+} */
 
 /* =========portfolio========== */
 .portfolio {
@@ -701,4 +727,28 @@ li {
 
 .window__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.window__form {
+    padding: 72px 24px 24px 24px;
+}
+
+.form__fieldset {}
+
+.form__input {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 360px;
+}
+
+.form__input:hover,
+.form__input:focus {
+    border-radius: 4px;
+    border: 1px solid #4D5AE5;
+}
+
+.fieldset__comment {
+    resize: none;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 }

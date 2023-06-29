@@ -299,14 +299,17 @@
             </div>
             <div>
                 <p>Subscribe</p>
-                <ul>
-                    <form><label><input class="" type="text" placeholder="E-mail"></label><button
-                            type="button"><span>Subscribe</span><svg class="subscribe-button_icon" width="24"
-                                height="24" viewBox="">
+
+                <form>
+                    <label><input class="" type="text" name="username" placeholder="E-mail"></label>
+                    <button class="footer__button" type="submit">
+                        <span>Subscribe</span>
+                        <span><svg class="subscribe-button_icon" width="24" height="24" viewBox="">
                                 <use href=""></use>
-                            </svg></button>
-                    </form>
-                </ul>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
@@ -317,6 +320,25 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="window__form">
+                <fieldset class="form__fieldset">
+                    <legend>Leave your contacts and we will call you back</legend>
+                    <label for="">Name
+                        <input class="form__input" type="text" name="name" autofocus required /></label>
+                    <label for="">Phone
+                        <input class="form__input" type="tel" name="phone_numer" required /></label>
+                    <label for="">Email
+                        <input class="form__input" type="email" name="email" required /></label>
+                    <label for="">Comment
+                        <textarea class="fieldset__comment" name="comment" placeholder="Text input" rows="5"
+                            cols="40"></textarea>
+                    </label>
+                    <label><input type="checkbox" name="accept" checked>
+                        I accept the terms and conditions of the <a>Privacy Policy</a>
+                    </label>
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
