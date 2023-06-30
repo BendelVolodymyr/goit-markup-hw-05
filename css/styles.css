@@ -526,7 +526,7 @@ input {
 
 .box__form__text {
     font-weight: 500;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer__box__form {
@@ -535,6 +535,7 @@ input {
 }
 
 .footer__input {
+    padding-left: 16px;
     width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
@@ -545,9 +546,11 @@ input {
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #ffffff;
+    background-color: transparent;
 }
 
 .footer__button {
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
     font-weight: 500;
     line-height: 1.5;
@@ -558,9 +561,12 @@ input {
     border-radius: 4px;
     border: none;
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    align-items: center;
+    min-width: 165px;
+}
 
+.subscribe-button_icon {
+    margin-left: 16px;
 }
 
 /* =========portfolio========== */
@@ -782,6 +788,19 @@ input {
 .box__form {}
 
 .form__fieldset {}
+
+.form__box__label {
+    margin-bottom: 8px;
+}
+
+.form__label__list {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--customers-link);
+    display: block;
+    margin-bottom: 4px;
+}
 
 .form__input {
     border: 1px solid #8E8F99;
