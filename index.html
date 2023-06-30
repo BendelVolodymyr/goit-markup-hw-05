@@ -315,7 +315,6 @@
     </footer>
     <div class="window is-hidden" data-modal>
         <div class="window__box">
-            <p class="window__box__p"></p>
             <form class="window__form"></form>
             <button class="window__button" type="button" data-modal-close>
                 <svg class="window__icon" width="8" height="8" viewBox="0 0 32 32">
@@ -324,13 +323,13 @@
             </button>
             <fieldset class="form__fieldset">
                 <legend>Leave your contacts and we will call you back</legend>
-                <label for="">Name
+                <label>Name
                     <input class="form__input" type="text" name="name" autofocus required /></label>
-                <label for="">Phone
+                <label>Phone
                     <input class="form__input" type="tel" name="phone_numer" required /></label>
-                <label for="">Email
+                <label>Email
                     <input class="form__input" type="email" name="email" required /></label>
-                <label for="">Comment
+                <label>Comment
                     <textarea class="fieldset__comment" name="comment" placeholder="Text input" rows="5"
                         cols="42"></textarea>
                 </label>
@@ -341,6 +340,7 @@
             <button type="submit">Send</button>
             </form>
         </div>
+        <p class="window__box__p"></p>
     </div>
     <script src="./js/modal.js"></script>
 </body>
