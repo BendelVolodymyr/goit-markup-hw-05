@@ -520,6 +520,17 @@ input {
     background-color: #31D0AA;
 }
 
+.box__form {}
+
+.form__text {
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    gap: 24px;
+}
+
 /* .footer_button {
     padding: 8px 24px;
     background-color: #4D5AE5;

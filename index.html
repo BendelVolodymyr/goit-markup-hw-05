@@ -297,10 +297,10 @@
                             </svg></a></li>
                 </ul>
             </div>
-            <div>
-                <p>Subscribe</p>
+            <div class="box__form">
+                <p class="form__text">Subscribe</p>
 
-                <form>
+                <form class="form">
                     <label><input class="" type="text" name="username" placeholder="E-mail"></label>
                     <button class="footer__button" type="submit">
                         <span>Subscribe</span>
@@ -315,31 +315,37 @@
     </footer>
     <div class="window is-hidden" data-modal>
         <div class="window__box">
-            <p class="window__box__p">Leave your contacts and we will call you back</p>
-            <form class="window__form">
-                <button class="window__button" type="button" data-modal-close>
-                    <svg class="window__icon" width="8" height="8" viewBox="0 0 32 32">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <fieldset class="form__fieldset">
+            <div>
+                <h2></h2>
+                <p class="window__box__p">Leave your contacts and we will call you back</p>
+                <label>Name
+                    <input class="form__input" type="text" name="name" autofocus required /></label>
+                <label>Phone
+                    <input class="form__input" type="tel" name="phone_numer" required /></label>
+                <label>Email
+                    <input class="form__input" type="email" name="email" required /></label>
+                <label>Comment
+                    <textarea class="fieldset__comment" name="comment" placeholder="Text input" rows="5"
+                        cols="42"></textarea>
+                </label>
 
-                    <label>Name
-                        <input class="form__input" type="text" name="name" autofocus required /></label>
-                    <label>Phone
-                        <input class="form__input" type="tel" name="phone_numer" required /></label>
-                    <label>Email
-                        <input class="form__input" type="email" name="email" required /></label>
-                    <label>Comment
-                        <textarea class="fieldset__comment" name="comment" placeholder="Text input" rows="5"
-                            cols="42"></textarea>
-                    </label>
-                    <label><input type="checkbox" name="accept" checked>
-                        I accept the terms and conditions of the <a>Privacy Policy</a>
-                    </label>
-                </fieldset>
-                <button type="submit">Send</button>
-            </form>
+                <form class="window__form">
+                    <!-- <div></div> -->
+                    <button class="window__button" type="button" data-modal-close>
+                        <svg class="window__icon" width="8" height="8" viewBox="0 0 32 32">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <fieldset class="form__fieldset">
+
+
+                        <label><input type="checkbox" name="accept" checked>
+                            I accept the terms and conditions of the <a>Privacy Policy</a>
+                        </label>
+                    </fieldset>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
 
     </div>
