@@ -561,6 +561,7 @@ input {
     border-radius: 4px;
     border: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     min-width: 165px;
 }
@@ -800,6 +801,11 @@ input {
     color: var(--customers-link);
     display: block;
     margin-bottom: 4px;
+}
+
+.box_list_icon {
+    position: relative;
+
 }
 
 .form__input {
