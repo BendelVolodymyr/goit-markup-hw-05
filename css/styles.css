@@ -694,6 +694,18 @@ input {
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 72px 24px 24px 24px;
+}
+
+.window__box__p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-main);
+    margin-bottom: 16px;
+
 }
 
 .window__box .window__button {
@@ -729,9 +741,9 @@ input {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.window__form {
-    padding: 72px 24px 24px 24px;
-}
+.window__form {}
+
+.box__form {}
 
 .form__fieldset {}
 
