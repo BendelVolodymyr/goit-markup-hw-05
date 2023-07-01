@@ -356,30 +356,22 @@
                 <!-- input comment -->
                 <div class="form__box__label">
                     <label class="form__label__list" for="user-comment">Comment</label>
-                    <div class="box_list_icon">
-                        <textarea class="form__comment" id="user-comment" name="user-comment" placeholder="Text input"
-                            rows="5" cols="42"></textarea>
-                    </div>
+                    <textarea class="form__comment" id="user-comment" name="user-comment"
+                        placeholder="Text input"></textarea>
                 </div>
-
-            </form>
-
-
-
-            <!-- <div></div> -->
-
-            <fieldset class="form__fieldset">
-
-
-                <label><input type="checkbox" name="accept" checked>
-                    I accept the terms and conditions of the <a>Privacy Policy</a>
-                </label>
-            </fieldset>
-            <button type="submit">Send</button>
-
-
+                <!-- input checkbox -->
+                <div class="form__checkbox"><input class="input__checkbox visually-hidden" type="checkbox"
+                        name="user-privacy" id="user-privacy" value="true" checked>
+                    <label class="checkbox__text" for="user-privacy">
+                        <span class="privacy__checkbox"><svg class="checkbox__icon" width="10" height="8">
+                                <use href=""></use>
+                            </svg></span> I accept the terms and
+                        conditions of the <a class="privacy__policy" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <!-- form buttom  -->
+                <button class="form__button" type="submit">Send</button>
         </div>
-
     </div>
     <script src="./js/modal.js"></script>
 </body>
