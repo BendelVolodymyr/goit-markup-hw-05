@@ -806,7 +806,10 @@ input {
 .box_list_icon {
     position: relative;
     width: 360px;
+}
 
+.form__box__comment {
+    margin-bottom: 16px;
 }
 
 .form__input {
@@ -845,8 +848,7 @@ input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     border-radius: 4px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -862,7 +864,9 @@ input {
 
 }
 
-.input__checkbox {}
+.input__checkbox:focus {
+    border: none;
+}
 
 .checkbox__text {
     color: var(--customers-link);
@@ -894,7 +898,7 @@ input {
 .form__button {
     display: block;
     margin: 0 auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
@@ -902,7 +906,7 @@ input {
     background-color: #4D5AE5;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
