@@ -5,6 +5,7 @@
     --icon-team: #f4f4fd;
     --color-text-footer: #FFFFFF;
     --customers-link: #8e8f99;
+    --form: #404bbf;
 }
 
 body {
@@ -871,8 +872,10 @@ input {
 
 }
 
-.input__checkbox:focus {
+.input__checkbox:checked+.checkbox__text .privacy__checkbox {
     border: none;
+    background-color: var(--form);
+    fill: var(--icon-team);
 }
 
 .checkbox__text {
