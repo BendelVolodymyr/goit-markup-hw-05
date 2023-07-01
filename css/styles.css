@@ -795,6 +795,8 @@ input {
     margin-bottom: 8px;
 }
 
+.form__box__label {}
+
 .form__label__list {
     font-size: 12px;
     line-height: 1.17;
@@ -807,6 +809,10 @@ input {
 .box_list_icon {
     position: relative;
     width: 360px;
+}
+
+.box_list_icon:focus-within>svg {
+    fill: #4D5AE5;
 }
 
 .form__box__comment {
@@ -837,11 +843,6 @@ input {
     transform: translateY(-50%);
     fill: rgba(46, 47, 66, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__list_icon:hover,
-.form__list_icon:focus {
-    fill: #4d5ae5;
 }
 
 .form__comment {
